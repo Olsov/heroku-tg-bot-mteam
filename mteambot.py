@@ -18,10 +18,10 @@ class Contact:
 	def returnInfo(self):
 		return "Имя:\r\n \r\n"+self.name+"\r\n \r\nПочта:\r\n \r\n"+self.email+"\r\n \r\nТекст:\r\n \r\n"+self.text
 	def sendMessageToSite(self):
-		r = requests.post('http://beerin.m-team.com.ua/',data={'name':self.name,'email':self.email,'message':self.text})
+		r = requests.post('http://api.m-team.com.ua/',data={'name':self.name,'email':self.email,'message':self.text})
 		return r.text
 	def sendTest(self):
-		r = requests.post('http://beerin.m-team.com.ua/')
+		r = requests.post('http://api.m-team.com.ua/')
 		return 'r.text'
 	def returnInfoToChanel(self):
 		now = datetime.datetime.now()
