@@ -2,7 +2,7 @@ import telebot
 import requests
 import datetime
 # для группы -100(номер группы(от{c} и до {_}))
-TOKEN = '455147225:AAHSOf6baU9TQ8u-KJhnK7pJsuPvU9TUWCA' # полученный у @BotFather
+TOKEN = '{key}' #token from  @BotFather
 bot = telebot.TeleBot(TOKEN)
 commandsText = '/contact  - Связаться с нами!\r\n/info - Про нас\r\n/help - Все команды\r\n/question - Задать вопрос в Telegram\r\n'
 class AnswerClass:
